@@ -1,3 +1,42 @@
+/*** KOMMENTAR
+
+body{
+margin: 0
+}
+
+#screen{
+position: relative;
+width: 100vw;
+height: 56.25vw;
+
+}
+
+
+#baggrund{
+position: absolute
+width: 100%;
+height 100%;
+background-image: url(billede);
+background-size: 100%;
+}
+
+
+#figur{
+background-image: url(billede)
+height: 10vw;
+position: absolute;
+background-size: 100%;
+}
+
+(lav screen container, med baggrund div i
+baggrundsstørrelse 1600x900
+
+tag baggrundens størrelse og figurens størrelse.
+Divider figurens størrelse med baggrundens størrelse og gang med 100 for at få procenten, som figurens width skal være)
+**/
+
+
+
 body,
 html {
     margin: 0;
@@ -5,57 +44,170 @@ html {
     overflow: hidden;
 }
 
-body {
-    margin: 0;
+
+#screen {
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+
 }
 
-
+/**TITELSKÆRM **/
 #menu_background {
     background: url(produktion/titelskaerm.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 56.25vw;
+    width: 100vw;
+    position: absolute;
 }
+
+
+#start {
+    background: url(produktion/startknap.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 13vw;
+    width: 30vw;
+    background-size: 100%;
+    top: 13vw;
+    left: 35vw;
+}
+
+#settings_knap {
+
+    background: url(produktion/settings.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 15vw;
+    width: 15vw;
+    background-size: 100%;
+    top: 2vw;
+    left: 85vw;
+}
+
+/** SETTINSMENU **/
+
+
+
+#settings {
+    background: url(produktion/settingsmenu.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 55vw;
+    width: 45vw;
+    background-size: 100%;
+    top: 15vw;
+    left: 28vw;
+}
+
+#musikknap {
+    background: url(produktion/musikknap.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 10vw;
+    width: 8vw;
+    background-size: 100%;
+    top: 27vw;
+    left: 55vw;
+
+}
+
+#musikknap2 {
+    background: url(produktion/musikknap.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 10vw;
+    width: 8vw;
+    background-size: 100%;
+    top: 34vw;
+    left: 55vw;
+
+}
+
+#lukknap {
+    background: url(produktion/lukknap.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 6vw;
+    width: 6vw;
+    background-size: 100%;
+    top: 18vw;
+    left: 59vw;
+}
+
+
+/** FORKLARING **/
+
+#forklaring {
+    background: url(produktion/info.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 45vw;
+    height: 55vw;
+
+    top: 12vw;
+    left: 28vw;
+
+}
+
+#startknap {
+    background: url(produktion/playknap.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 7vw;
+    height: 7vw;
+
+    top: 35vw;
+    left: 48vw;
+}
+
 
 /** SPILLESKÆRM **/
 
 #game_background {
-    background: url(produktion/baggrund.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    height: 100vh;
+    position: relative;
+    background-image: url(produktion/baggrund.svg);
+    background-size: 100%;
     width: 100vw;
+    height: 56.25vw;
 
 }
 
 #fisk {
     background: url(produktion/fisk.svg);
     position: absolute;
-    background-size: contain;
+    background-size: 100%;
     height: 40vh;
     width: 40vw;
     background-repeat: no-repeat;
-    top: 32vw;
+    top: 30vw;
     left: 45vw;
 }
 
-#tidsknap {
+#tid {
     background: url(produktion/tidsknap.svg);
     position: absolute;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     height: 20vh;
     width: 25vw;
     top: 0.5vw;
     left: 35vw;
 }
 
-#livsbar {
+#energy {
     background: url(produktion/livsbar.svg);
     position: absolute;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 65vh;
-    width: 15vw;
+    background-size: 100%;
+    height: 40vw;
+    width: 9vw;
     top: 7.3vw;
     left: 90vw;
 
@@ -63,13 +215,13 @@ body {
 
 }
 
-#pointbar {
+#points {
     background: url(produktion/pointbar.svg);
     position: absolute;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 65vh;
-    width: 15vw;
+    background-size: 100%;
+    height: 40vw;
+    width: 9vw;
     top: 7vw;
     left: 83vw;
 }
@@ -78,9 +230,9 @@ body {
     background: url(produktion/tang_1.svg);
     position: absolute;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 45vh;
-    width: 50vw;
+    background-size: 100%;
+    height: 19.2vw;
+    width: 15vw;
     top: 37vw;
     left: 70vw;
 }
@@ -89,9 +241,9 @@ body {
     background: url(produktion/daese.svg);
     position: absolute;
     background-repeat: no-repeat;
-    height: 20vh;
+    height: 10vw;
     width: 7vw;
-    background-size: contain;
+    background-size: 100%;
     top: 15vw;
     left: 40vw;
 
@@ -101,9 +253,9 @@ body {
     background: url(produktion/flaske.svg);
     position: absolute;
     background-repeat: no-repeat;
-    height: 27vh;
+    height: 15vw;
     width: 13vw;
-    background-size: contain;
+    background-size: 100%;
     top: 20vw;
     left: 20vw;
 
@@ -113,9 +265,9 @@ body {
     background: url(produktion/andenfisk.svg);
     position: absolute;
     background-repeat: no-repeat;
-    height: 10vh;
+    height: 7vw;
     width: 14vw;
-    background-size: contain;
+    background-size: 100%;
     top: 25vw;
     left: 50vw;
 
@@ -126,9 +278,9 @@ body {
     background: url(produktion/tang.svg);
     position: absolute;
     background-repeat: no-repeat;
-    height: 25vh;
+    height: 15vw;
     width: 15vw;
-    background-size: contain;
+    background-size: 100%;
     top: 10vw;
     left: 7vw;
 
@@ -138,322 +290,169 @@ body {
     background: url(produktion/sugereor.svg);
     position: absolute;
     background-repeat: no-repeat;
-    height: 25vh;
+    height: 15vw;
     width: 10vw;
-    background-size: contain;
+    background-size: 100%;
     top: 10vw;
     left: 60vw;
 }
 
 
-
-
-/** TITELSKÆRM **/
-
-#start {
-    display: none;
-    background: url(produktion/titelskaerm.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    height: 100vh;
-    width: 100vw;
-}
-
-#startknap {
-    display: none;
-    background: url(produktion/startknap.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 20vw;
-    background-size: contain;
-    top: 13vw;
-    left: 40vw;
-}
-
-#settings_knap {
-    display: none;
-    background: url(produktion/settings.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 25vw;
-    background-size: contain;
-    top: 2vw;
-    left: 85vw;
-}
-
-/** SETTINGS MENU **/
-
-#settings2 {
-    display: none;
-    background: url(produktion/titelskaerm.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    height: 100vh;
-    width: 100vw;
-}
-
-#settings_knap2 {
-    display: none;
-    background: url(produktion/settings.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 25vw;
-    background-size: contain;
-    top: 2vw;
-    left: 85vw;
-}
-
-#settingsmenu {
-    display: none;
-    background: url(produktion/settingsmenu.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 50vh;
-    width: 35vw;
-    background-size: contain;
-    top: 15vw;
-    left: 34vw;
-}
-
-#musikknap {
-    display: none;
-    background: url(produktion/musikknap.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 10vh;
-    width: 8vw;
-    background-size: contain;
-    top: 24vw;
-    left: 55vw;
-
-}
-
-#musikknap2 {
-    display: none;
-    background: url(produktion/musikknap.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 10vh;
-    width: 8vw;
-    background-size: contain;
-    top: 29vw;
-    left: 55vw;
-
-}
-
-#lukknap {
-    display: none;
-    background: url(produktion/lukknap.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    height: 10vh;
-    width: 8vw;
-    background-size: contain;
-    top: 17vw;
-    left: 58vw;
-}
-
 /** GAME OVER MENU **/
 
+
+
 #gameover {
-    display: none;
-    background: url(produktion/baggrund.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
-    height: 100vh;
-    width: 100vw;
-}
-
-#tidsknap2 {
-    display: none;
-    background: url(produktion/tidsknap.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 20vh;
-    width: 25vw;
-    top: 0.5vw;
-    left: 35vw;
-
-}
-
-#fisk2 {
-    display: none;
-    background: url(produktion/fisk.svg);
-    position: absolute;
-    background-size: contain;
-    height: 40vh;
-    width: 40vw;
-    background-repeat: no-repeat;
-    top: 32vw;
-    left: 45vw;
-}
-
-#livsbar2 {
-    display: none;
-    background: url(produktion/livsbar.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 60vh;
-    width: 15vw;
-    top: 7.3vw;
-    left: 90vw;
-}
-
-#pointbar2 {
-    display: none;
-    background: url(produktion/pointbar.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 60vh;
-    width: 15vw;
-    top: 7vw;
-    left: 83vw;
-}
-
-#tang_2 {
-    display: none;
-    background: url(produktion/tang_1.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 45vh;
-    width: 50vw;
-    top: 37vw;
-    left: 70vw;
-    z-index: 1;
-}
-
-#gameovermenu {
-    display: none;
     background: url(produktion/gameover.svg);
     position: absolute;
     background-repeat: no-repeat;
-    height: 50vh;
-    width: 35vw;
+    height: 40vw;
+    width: 40vw;
     background-size: contain;
     top: 10vw;
-    left: 30vw;
+    left: 27vw;
 }
 
 #replayknap {
-    display: none;
+
     background: url(produktion/replayknap.svg);
     position: absolute;
     background-repeat: no-repeat;
-    height: 12vh;
-    width: 20vw;
-    background-size: contain;
-    top: 27vw;
+    height: 7vw;
+    width: 7vw;
+    background-size: 100%;
+    top: 30vw;
     left: 43vw;
 }
+
+
 
 /** LEVEL COMPLETE **/
 
 #levelcomplete1 {
-    display: none;
-    background: url(produktion/baggrund.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    height: 100vh;
-    width: 100vw;
-}
-
-#tidsknap3 {
-    display: none;
-    background: url(produktion/tidsknap.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 20vh;
-    width: 25vw;
-    top: 0.5vw;
-    left: 35vw;
-
-}
-
-#fisk3 {
-    display: none;
-    background: url(produktion/fisk.svg);
-    position: absolute;
-    background-size: contain;
-    height: 40vh;
-    width: 40vw;
-    background-repeat: no-repeat;
-    top: 32vw;
-    left: 45vw;
-}
-
-#livsbar3 {
-    display: none;
-    background: url(produktion/livsbar.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 60vh;
-    width: 15vw;
-    top: 7.3vw;
-    left: 90vw;
-}
-
-#pointbar3 {
-    display: none;
-    background: url(produktion/pointbar.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 60vh;
-    width: 15vw;
-    top: 7vw;
-    left: 83vw;
-}
-
-#tang_3 {
-    display: none;
-    background: url(produktion/tang_1.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 40vh;
-    width: 50vw;
-    top: 37vw;
-    left: 70vw;
-    z-index: 1;
-}
-
-#levelcompletemenu {
-    display: none;
     background: url(produktion/levelcomplete.svg);
     position: absolute;
     background-repeat: no-repeat;
-    height: 50vh;
-    width: 35vw;
-    background-size: contain;
+    height: 40vw;
+    width: 40vw;
+    background-size: 100%;
     top: 10vw;
-    left: 31vw;
+    left: 27vw;
 }
 
 #replayknap2 {
-    display: none;
     background: url(produktion/replayknap.svg);
     position: absolute;
     background-repeat: no-repeat;
-    height: 13vh;
-    width: 20vw;
-    background-size: contain;
-    top: 25vw;
+    height: 7vw;
+    width: 7vw;
+    background-size: 100%;
+    top: 27vw;
     left: 43vw;
 }
+
+.hide {
+    display: none;
+}
+
+
+
+
+/** ANIMATION **/
+
+
+.tang_flyder1 {
+    animation-name: flyder1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes flyder1 {
+    from {
+        transform: translateX(-15vw);
+    }
+
+    to {
+        transform: translateX(120vw);
+    }
+
+}
+
+.andenfisk_flyder {
+    animation-name: flyder;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+
+}
+
+
+@keyframes flyder {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(-70vw);
+    }
+
+}
+
+.flaske_flyder2 {
+    animation-name: flyder2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes flyder2 {
+    from {
+        transform: translateX(-30vw);
+    }
+
+    to {
+        transform: translateX(80vw);
+    }
+
+}
+
+
+.sugereor_flyder3 {
+    animation-name: flyder3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+
+}
+
+
+@keyframes flyder3 {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(-80vw);
+    }
+
+}
+
+.daese_flyder4 {
+    animation-name: flyder4;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes flyder4 {
+    from {
+        transform: translateX(-40vw);
+    }
+
+    to {
+        transform: translateX(100vw);
+    }
